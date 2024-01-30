@@ -71,4 +71,5 @@ def verifySorted(list):
   
   return list[0] <= list[1] and verifySorted(list[1:])
 
-print(verifySorted(mergeSort([1, 5, 3, 3, 50])))
+numbers = [random.randint(0, 10000000) for x in range(10000000)]
+print(mergeSort(numbers))
